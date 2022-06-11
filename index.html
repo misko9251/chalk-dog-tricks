@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <title>Dog Training Chalkboard</title>
+    <link rel="stylesheet" type="text/css"   href="css/style.css">
+</head>
+<body>
+    <section class="border">
+        <section class="main-container">
+            <header>
+                <h1>CHALKBOARD DOG TRICKS</h1>
+            </header>
+            <div class="flex-container">
+            <section class="knows">
+                <h3>TRICKS MY DOG KNOWS</h3>
+                <form action="/addTrick" method="POST">
+                    <input type="text" placeholder="Trick Name" name="name">
+                    <input value ="Good Job!" type="submit">
+                </form>
+                <ul class="knownTricks">
+                    <li>SIT</li>
+                    <li>DOWN</li>
+                </ul>
+            </section>
+            <section class="learning">
+                <h3>TRICKS WE ARE LEARNING</h3>
+                <form action="/addTrick2" method="POST">
+                    <input type="text" placeholder="Trick Name" name="trickNameLearning">
+                    <input value="Keep Trying!" type="submit">
+                </form>
+                <ul class="learningTricks">
+                    <li>SPEAK<span class='trash'> X</span></li>
+                    <li>COME<span class='trash'> X</span></li>
+                    <li>ROLL OVER<span class='trash'> X</span></li>
+                </ul>
+            </section>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
